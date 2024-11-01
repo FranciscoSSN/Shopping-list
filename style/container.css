@@ -1,0 +1,20 @@
+main #container {
+    margin-bottom: 44px;
+
+    & a {
+        text-decoration: none;
+        color: var(--cl-brand);
+        font: var(--link);
+
+        transition: color 3s;
+
+        &:hover {
+            color: var(--cl-brand-hover);
+        }
+    }
+
+    & h1 {
+        font: var(--title);
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,79 @@
+#list-shopping {
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & li {
+            background-color: var(--bg-secondary);
+            padding: 12px;
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            position: relative;
+
+            .radio-inner {           
+                display: grid;
+                justify-items: center;
+                gap: .5rem;
+            
+                padding: 2rem .5rem .5rem;
+            
+                position: relative;
+            
+                & input,
+                & input:focus,
+                & input:hover {
+                    all: unset;
+                    position: absolute;
+                    inset: 0;
+                }
+            
+                .radio-image {
+                    background-image: url(../assets/state=Default.svg);
+                    background-repeat: no-repeat;
+            
+                    width: 1.5rem;
+                    height: 1.5rem;
+            
+                    position: absolute;
+                    top: .5rem;
+                    left: .5rem;
+                }
+            
+                &:hover, &:focus-within {
+            
+                    & .radio-image {
+                        background-image: url(../assets/state=hover.svg);
+                    }
+                }
+            
+                &:has(:checked) {
+            
+                    & .radio-image {
+                        background-image: url(../assets/state=selected.svg);
+                    }
+                }
+
+                &:not(:checked) {
+                    & .radio-image {
+                        background-image: url(../assets/icons/warning-circle-filled.svg);
+                    }
+                } 
+            }
+            
+        }
+        
+        & #exit {
+            /* display: none; */
+
+            background-color: var(--cl-danger);
+            color: #FFFFFF;
+        }
+    }
+}

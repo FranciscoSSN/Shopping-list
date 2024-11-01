@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <a href="#">Voltar</a>
+            <h1>Compras da Semana</h1>
+        </div>
+
+        <form>
+            <input type="text" id="item" name="item" placeholder="Adicione um novo item" required>
+            <button>Adicionar item</button>
+        </form>
+
+        <div id="list-shopping">
+            <ul>
+                <li>
+                    <div class="radio-inner">
+                        <div class="radio-image"></div>
+                        <input type="radio" name="study-shift" id="radio" value="radio">
+                    </div>
+                    <span>Pão de Forma</span>
+                    <a href="#">
+                        <img class="remove-item" src="assets/icons/trash.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <div class="radio-inner">
+                        <div class="radio-image"></div>
+                        <input type="radio" name="study-shift" id="radio" value="radio">
+                    </div>
+                    <span>Café preto</span>
+                    <a href="#" >
+                        <img class="remove-item" src="assets/icons/trash.svg">
+                    </a>
+                </li>
+                <li>
+                    <div class="radio-inner">
+                        <div class="radio-image"></div>
+                        <input type="radio" name="study-shift" id="radio" value="radio">
+                    </div>
+                    <span>Suco de laranja</span>
+                    <a href="#">
+                        <img class="remove-item" src="assets/icons/trash.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <div class="radio-inner">
+                        <div class="radio-image"></div>
+                        <input type="radio" name="study-shift" id="radio" value="radio">
+                    </div>
+                    <span>Bolacha</span>
+                    <a href="#">
+                        <img class="remove-item" src="assets/icons/trash.svg" alt="">
+                    </a>
+                </li>
+                <!-- <li id="exit">
+                    <div class="radio-inner">
+                        <div class="radio-image"></div>
+                        <input type="radio" name="study-shift" id="radio" value="radio">
+                    </div>
+                    <span>O item foi removido da lista</span>
+                    <a href="#">
+                        <img class="remove-item" src="assets/icons/delete-small.svg" alt="">
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

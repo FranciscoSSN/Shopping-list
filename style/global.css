@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #F4F5FB;
+    --bg-secondary: #FFFFFF;
+
+    --cl-brand: #CA3884;
+    --cl-brand-hover: #A52C6B;
+    --cl-danger: #C93847;
+
+    --ct-primary: #080B12;
+    --ct-secondary: #374151;
+    --ct-tertiary: #9CA3AF;
+
+    --border-primary: #D1D5DB;
+    --border-secondary: #B9C2D0;
+
+    --font: "Inter";
+    --title: 1.5rem/2rem 700 var(var(--font));
+    --label: 1rem/1.25rem 600 var(var(--font));
+    --paragraph: 1rem/1.25rem 500 var(var(--font));
+    --link: 0.875rem/1rem 500 var(var(--font));
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-primary);
+}
+
+main {
+    overflow-y: hidden;
+}
